@@ -1,6 +1,8 @@
 # Portafreak
-Useful powershell scripts that I made to monitor active asterisk Call by using the AMI.
+A useful powershell script that I made to monitor active asterisk calls.
+The script connect to the AMI.
 Tested with Asterisk 16 in PJSIP.
+
 
 Edit /etc/asterisk/manager.conf
 
@@ -15,7 +17,7 @@ secret = my password
 read = agent
 write = command,system
 
-Execute the script:
+Execute the script in command line:
 
 C:\Windows\SysWOW64\WindowsPowerShell\v1.0\Powershell.exe -executionpolicy bypass -noexit "D:\Powershell\Asterisk_active_channel_AMI.ps1" -asterisk_ip "X.X.X.X" -Port "5038" -external_context "TO_EXTERNAL" -ami_user "User" -ami_pass "my_password"
 
