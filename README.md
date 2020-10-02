@@ -14,3 +14,7 @@ bindaddr = 0.0.0.0
 secret = my password
 read = agent
 write = command,system
+
+Execute the script:
+
+
