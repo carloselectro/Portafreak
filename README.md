@@ -1,6 +1,6 @@
 # Portafreak
-Useful powershell scripts that I made to monitor active asterisk Call.
-Tested with Assterisk 16 in PJSIP.
+Useful powershell scripts that I made to monitor active asterisk Call by using the AMI.
+Tested with Asterisk 16 in PJSIP.
 
 Edit /etc/asterisk/manager.conf
 
