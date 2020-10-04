@@ -1,10 +1,11 @@
 # Portafreak
 A useful powershell script that I made to monitor active asterisk calls.
+I could not find anything simple for viewing active calls from Windows so I decided to make my own.
 The script connect to the AMI.
 Tested with Asterisk 16 in PJSIP.
 
-Edit /etc/asterisk/manager.conf.
-DO NOT FORGET TO CHOOSE A GOOD PASSWORD.
+1- Edit /etc/asterisk/manager.conf.
+   (DO NOT FORGET TO CHOOSE A STRONG PASSWORD.)
 
 [general]
 enabled = yes
@@ -16,6 +17,10 @@ bindaddr = 0.0.0.0
 secret = my password
 read = agent
 write = command,system
+
+2- ssh into asterisk and execute the following command:
+   asterisk -rvvv
+   manager reload
 
 Execute the script in command line:
 
