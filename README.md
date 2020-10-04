@@ -20,6 +20,7 @@ write = command,system
 
 2- ssh into asterisk and execute the following command:
    asterisk -rvvv
+   
    manager reload
 
 Execute the script in command line:
