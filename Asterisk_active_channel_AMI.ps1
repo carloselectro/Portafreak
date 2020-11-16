@@ -70,9 +70,7 @@ function get_endpoint_caller_ID {
     $obj = ($result | ConvertFrom-String -Delimiter  "`n|`r`n" )
 
     $endpoint_details = [PSCustomObject]@{
-        Callerid     = ($obj | Select-Object -ExpandProperty "P65" ).ToString().Split(':')[1].Trim(' ')
-        EndpointName = ($obj | Select-Object -ExpandProperty "P188" ).ToString().Split(':')[1].Trim(' ')
-        Contacts     = ($obj | Select-Object -ExpandProperty "P181" ).ToString().Split(':')[1].Trim(' ')
+        Callerid     = ($obj | Select-Object -ExpandProperty "P69" ).ToString().Split(':')[1].Trim(' ')
     }
     return $endpoint_details.Callerid
 
